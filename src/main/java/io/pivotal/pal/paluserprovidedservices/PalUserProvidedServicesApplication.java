@@ -25,30 +25,30 @@ public class PalUserProvidedServicesApplication {
 		SpringApplication.run(PalUserProvidedServicesApplication.class, args);
 	}
 
-	@Bean
-	ServiceCredentials serviceCredentials(@Value("${vcap.services}") String vcapServices) {
-		return new ServiceCredentials(vcapServices);
-	}
+//	@Bean
+//	ServiceCredentials serviceCredentials(@Value("${vcap.services}") String vcapServices) {
+//		return new ServiceCredentials(vcapServices);
+//	}
 
-	@Bean
-	public DataSource getDataSource(ServiceCredentials serviceCredentials) throws Exception {
-		String databaseName = serviceCredentials.getCredential("SERVICE_INSTANCE", "user-provided", "databasename");
-		String host = serviceCredentials.getCredential("SERVICE_INSTANCE", "user-provided", "host");
-		String password = serviceCredentials.getCredential("SERVICE_INSTANCE", "user-provided", "password");
-		String port = serviceCredentials.getCredential("SERVICE_INSTANCE", "user-provided", "port");
-		String username = serviceCredentials.getCredential("SERVICE_INSTANCE", "user-provided", "username");
-
-		String driverClassName = "com.mysql.jdbc.Driver";
-		String jdbcUrl = "jdbc:mysql://"+host+":"+port+"/"+databaseName+"?useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false";
-
-		final Class<?> driverClass = ClassUtils.resolveClassName(driverClassName, this.getClass().getClassLoader());
-		final Driver driver = (Driver) ClassUtils.getConstructorIfAvailable(driverClass).newInstance();
-		return new SimpleDriverDataSource(driver, jdbcUrl, username, password);
-
-//			final DataSource dataSource = DataSourceBuilder.create().driverClassName(driverClassName).url(jdbcUrl).username(username).password(password).build();
-		//return new JdbcTemplate(dataSource);
-
-	}
+//	@Bean
+//	public DataSource getDataSource(ServiceCredentials serviceCredentials) throws Exception {
+//		String databaseName = serviceCredentials.getCredential("SERVICE_INSTANCE", "user-provided", "databasename");
+//		String host = serviceCredentials.getCredential("SERVICE_INSTANCE", "user-provided", "host");
+//		String password = serviceCredentials.getCredential("SERVICE_INSTANCE", "user-provided", "password");
+//		String port = serviceCredentials.getCredential("SERVICE_INSTANCE", "user-provided", "port");
+//		String username = serviceCredentials.getCredential("SERVICE_INSTANCE", "user-provided", "username");
+//
+//		String driverClassName = "com.mysql.jdbc.Driver";
+//		String jdbcUrl = "jdbc:mysql://"+host+":"+port+"/"+databaseName+"?useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false";
+//
+//		final Class<?> driverClass = ClassUtils.resolveClassName(driverClassName, this.getClass().getClassLoader());
+//		final Driver driver = (Driver) ClassUtils.getConstructorIfAvailable(driverClass).newInstance();
+//		return new SimpleDriverDataSource(driver, jdbcUrl, username, password);
+//
+////			final DataSource dataSource = DataSourceBuilder.create().driverClassName(driverClassName).url(jdbcUrl).username(username).password(password).build();
+//		//return new JdbcTemplate(dataSource);
+//
+//	}
 
 
 

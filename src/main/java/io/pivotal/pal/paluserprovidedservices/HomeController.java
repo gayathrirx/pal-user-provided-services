@@ -15,8 +15,8 @@ public class HomeController {
     @Autowired
     CohortRepository cohortRepository;
 
-    @Autowired
-    DataSource dataSource;
+//    @Autowired
+//    DataSource dataSource;
 
 //    @Autowired
 //    JdbcTemplate jdbcTemplate;
@@ -41,12 +41,20 @@ public class HomeController {
         c2.setNickName("GiGo");
         cohortRepository.save(c2);
 
+
+
         List<Cohort> list = new ArrayList<Cohort>();
         list.add(c1);
         list.add(c2);
 
         return list;
 
+    }
+
+    @GetMapping("/save")
+    public void save() {
+        cohortRepository.save(new Cohort("Georg", "Geo"));
+        cohortRepository.save(new Cohort("Hunter", "Hunt"));
     }
 
 

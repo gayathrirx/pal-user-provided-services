@@ -1,20 +1,25 @@
 package io.pivotal.pal.paluserprovidedservices;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Cohort {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+
     private long id;
     private String name;
     private String nickName;
 
+    public Cohort(String name, String nickName) {
+        this.name = name;
+        this.nickName = nickName;
+    }
 
+    public Cohort() {
+
+    }
 
     public long getId() {
         return id;
