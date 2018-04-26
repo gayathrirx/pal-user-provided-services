@@ -1,0 +1,1000 @@
+ 1158  history | grep mvn
+ 1159  mvn spring-boot:run
+ 1160  history
+ 1161  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1162  cf logout
+ 1163  cf login
+ 1164  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1165  cf scale -help
+ 1166  cf scale moviefun -i 2
+ 1167  git add
+ 1168  git add .
+ 1169  git status
+ 1170  git add src/main/java/org/superbiz/moviefun/blobstore/ServiceCredentials.java
+ 1171  git status
+ 1172  git add
+ 1173  git add .
+ 1174  git status
+ 1175  git commit
+ 1176  git status
+ 1177  git commit -am 'ServiceCredentials'
+ 1178  git status
+ 1179  mkdir -p ~/shared/moviefun
+ 1180  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"${MINIO_ACCESS_KEY:?missing}\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"${MINIO_SECRET_ACCESS_KEY:?missing}\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1181  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"6AM8JTAHCHTILESTBV38\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"FQL/6KWriBJrpgckcqb7Bnb1OnDP2uOC8oOqU8Tm\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1182  export S3_ENDPOINTURL=http://127.0.0.1:9000
+ 1183  mvn clean package
+ 1184  history | grep mvn
+ 1185  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1186  mvn spring-boot:run
+ 1187  history | grep mvn
+ 1188  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1189  mvn spring-boot:run
+ 1190  echo %VCAP%
+ 1191  echo %VCAP_SERVICES%
+ 1192  history | grep export
+ 1193  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"6AM8JTAHCHTILESTBV38\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"FQL/6KWriBJrpgckcqb7Bnb1OnDP2uOC8oOqU8Tm\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1194  export S3_ENDPOINTURL=http://127.0.0.1:9000
+ 1195  mvn spring-boot:run
+ 1196  clear
+ 1197  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1198  mvn spring-boot:run
+ 1199  echo %VCAP_SERVICES%
+ 1200  echo $VCAP_SERVICES
+ 1201  echo $S3_ENDPOINTURL
+ 1202  clear
+ 1203  mvn spring-boot:run
+ 1204  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1205  mvn spring-boot:run
+ 1206  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"6AM8JTAHCHTILESTBV38\", \"bucket\": \"moviefun\", \"secret_access_key\": \"FQL/6KWriBJrpgckcqb7Bnb1OnDP2uOC8oOqU8Tm\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1207  clear
+ 1208  mvn spring-boot:run
+ 1209  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1210  cf push moviefun --random-route --no-start -p target/moviefun.war
+ 1211  echo $VCAP_SERVICES
+ 1212  cf start moviefun
+ 1213  cd ../assignment-submission/
+ 1214  ./gradlew replatformingRemovingPersistenceToFileSystem -PmovieFunUrl=https://moviefun-responsible-gecko.apps.longs.pal.pivotal.io/
+ 1215  cd ../apps-movie-fun-code/
+ 1216  git status
+ 1217  git add
+ 1218  git add .
+ 1219  git status
+ 1220  git commit -am "blob"
+ 1221  git status
+ 1222  git push
+ 1223  git branch
+ 1224  git push
+ 1225  git push --set-upstream origin write-to-blobstore-start
+ 1226  git --help
+ 1227  git remote -v
+ 1228  git status
+ 1229  git push sfistler write-to-blobstore-start:write-to-blobstore-pair-solution
+ 1230  git branch
+ 1231  git push 
+ 1232  git push sfistler HEAD:write-to-blobstore-pair-solution
+ 1233  git config -l
+ 1234  ls -la
+ 1235  cat .gitignore 
+ 1236  git config --user.name sfistler
+ 1237  git config --global user.name sfistler
+ 1238  git config --global user.email scottfistler@wellsfargo.com
+ 1239  git config --global user.email s.fistler@gmail.com
+ 1240  git branch logging-sf
+ 1241  git -v branch logging-sf
+ 1242  git checkout logging-start
+ 1243  git branch loggin-sf
+ 1244  git branch
+ 1245  git checkout loggin-sf
+ 1246  git branch
+ 1247  history
+ 1248  cf create-user-provided-service paper-trail -l syslog-tls://logs3.papertrailapp.com:24078
+ 1249  cf bind-service moviefun paper-trail
+ 1250  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1251  history | grep cf push
+ 1252  history | grep cf
+ 1253  cf push moviefun
+ 1254  cf push moviefun -p target/moviefun.war --random-route
+ 1255  cd ../assignment-submission/
+ 1256  ./gradlew replatformingLogging -PmovieFunUrl=https://moviefun-responsible-gecko.apps.longs.pal.pivotal.io
+ 1257  cd ..
+ 1258  clearclear
+ 1259  clear
+ 1260  git c
+ 1261  git commit -am 'logging'
+ 1262  git checkout background-jobs-start
+ 1263  git checkout -b bgdb
+ 1264  git branch
+ 1265  clear
+ 1266  mysql -u root
+ 1267  cf mysql --help
+ 1268  cf install-plugin -r "CF-Community" mysql-plugin
+ 1269  ls
+ 1270  cd databases/
+ 1271  ls
+ 1272  cd albums-scheduler/
+ 1273  ls
+ 1274  cat schema.ddl 
+ 1275  cf mysql albums-mysql < schema.ddl
+ 1276  cf logs moviefun
+ 1277  cf logs moviefun --recent
+ 1278  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1279  cd ../..
+ 1280  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1281  cf logs moviefun --recent
+ 1282  cd target
+ 1283  ls
+ 1284  cd ..
+ 1285  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1286  cf push moviefun -p target/moviefun.war --random-route
+ 1287  cf logs moviefun --recent
+ 1288  cf restage
+ 1289  cf restage moviefun
+ 1290  cf push moviefun -p target/moviefun.war --random-route
+ 1291  cf scale moviefun -i 3
+ 1292  aws configure
+ 1293  ls
+ 1294  aws s3 cp albums.csv s3://moviefun
+ 1295  aws configure
+ 1296  aws s3 cp albums.csv s3://moviefun-s3
+ 1297  aws configure
+ 1298  aws s3 cp albums.csv s3://moviefun
+ 1299  ls
+ 1300  aws configure
+ 1301  aws s3 cp albums.csv s3://cf-89bdf68b-daae-423b-8f62-641814295df4
+ 1302  cd ../assignment-submission/
+ 1303  ./gradlew replatformingBackgroundJobsWithDb -PmovieFunUrl=https://moviefun-responsible-gecko.apps.longs.pal.pivotal.io
+ 1304  cd ..
+ 1305  cd apps-movie-fun-code/
+ 1306  history | grep git
+ 1307  git add .
+ 1308  git commit -am 'bgdb'
+ 1309  git push sfistler HEAD:bgdb-solution
+ 1310  git checkout background-jobs-rabbit-start
+ 1311  cd workspace/apps-movie-fun-code/
+ 1312  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1313  cd workspace/apps-movie-fun-code/
+ 1314  git checkout background-jobs-rabbit-start
+ 1315  git checkout -b rabbit-start
+ 1316  git branch rabbit-start
+ 1317  git branch
+ 1318  git cheout rabbit-start
+ 1319  git checkout rabbit-start
+ 1320  git branch
+ 1321  git checkout -b background-jobs-rabbit-start
+ 1322  git branch
+ 1323  sudo su
+ 1324  rabbitmq-server start
+ 1325  sudo rabbitmq-server start
+ 1326  rabbitmq-plugins enable rabbitmq_management
+ 1327  ps -p
+ 1328  ps -f
+ 1329  ps -ef
+ 1330  ps -ef | grep rabbit
+ 1331  kill 1109 924 739 724
+ 1332  sudo kill 1109 924 739 724
+ 1333  ps -ef | grep rabbit
+ 1334  sudo kill 18793
+ 1335  sudo rabbitmq-server start
+ 1336  rabbitmq-plugins enable rabbitmq_management
+ 1337  sudo rabbitmq-server start
+ 1338  ps -ef | grep rabbit
+ 1339  sudo kill 18924
+ 1340  ps -ef | grep rabbit
+ 1341  sudo kill 1072
+ 1342  curl -X POST http://localhost:8080/rabbit -d ""
+ 1343  cf service rabbit
+ 1344  cd workspace/apps-movie-fun-code/
+ 1345  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1346  curl -X POST https://moviefun-responsible-gecko.apps.longs.pal.pivotal.io/rabbit -d ""
+ 1347  clear
+ 1348  cd ../assignment-submission/
+ 1349  ls
+ 1350  cat build.gradle
+ 1351  ./gradlew replatformingBackgroundJobsWithAmqp -PmovieFunUrl=https://moviefun-responsible-gecko.apps.longs.pal.pivotal.io
+ 1352  cd ../apps-movie-fun-code/
+ 1353  git add .
+ 1354  git commit -am 'rabbit'
+ 1355  git push HEAD:rabbit-solution-sf
+ 1356  git status
+ 1357  git push
+ 1358  git branch
+ 1359  git push background-jobs-rabbit-start
+ 1360  git push sfistler HEAD:bg-rabbit-solution
+ 1361  git clone https://github.com/phanes72/apps-platform-acceleration-removing-instance-specific-state-code.git
+ 1362  exit
+ 1363  minio server ~/shared
+ 1364  exit
+ 1365  history
+ 1366  history > notes.txt
+ 1367  cd workspace/apps-movie-fun-code/
+ 1368  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1369  mvn spring-boot:run
+ 1370  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"6AM8JTAHCHTILESTBV38\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"FQL/6KWriBJrpgckcqb7Bnb1OnDP2uOC8oOqU8Tm\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1371  mvn spring-boot:run
+ 1372  exit
+ 1373  ps -ef | grep rabbit
+ 1374  sudo kill 18942
+ 1375  rabbitmq-plugins enable rabbitmq_management
+ 1376  sudo rabbitmq-plugins enable rabbitmq_management
+ 1377  sudo rabbitmq-server start
+ 1378  exit
+ 1379  cf logs moviefun
+ 1380  exit
+ 1381  ls
+ 1382  cd workspace/
+ 1383  ls
+ 1384  brew services start redis
+ 1385  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1386  brew services start redis
+ 1387  exit
+ 1388  mvn -Dmaven.tomcat.port=9090 -DinstanceNumber=1 tomcat7:run-war
+ 1389  cd workspace/
+ 1390  ls
+ 1391  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1392  mvn -Dmaven.tomcat.port=9090 -DinstanceNumber=1 tomcat7:run-war
+ 1393  exit
+ 1394  cd workspace/
+ 1395  ls
+ 1396  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1397  mvn clean package
+ 1398  cf push remove-session-state -p target/remove-session-state-lab.war -i 2 --random-route --no-start
+ 1399  cf start remove-session-state
+ 1400  cd ../..
+ 1401  ls
+ 1402  cd workspace/assignment-submission/
+ 1403  ./gradlew replatformingRemoveInstanceSpecificState -PsessionStateUrl=https://remove-session-state-daring-giraffe.apps.longs.pal.pivotal.io/
+ 1404  cd ..
+ 1405  ls
+ 1406  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1407  git add .
+ 1408  git status
+ 1409  git commit -am "Reddis Session Lab"
+ 1410  git status
+ 1411  git push
+ 1412  exit
+ 1413  pwd
+ 1414  ls
+ 1415  cd workspace/
+ 1416  ls
+ 1417  cd apps-movie-fun-code/
+ 1418  ls
+ 1419  cd ..
+ 1420  git clone https://github.com/phanes72/apps-platform-acceleration-removing-instance-specific-state-code.git
+ 1421  ls
+ 1422  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1423  ls
+ 1424  ls -l
+ 1425  mvn clean package
+ 1426  ls -l
+ 1427  mvn -Dmaven.tomcat.port=8080 -DinstanceNumber=0 tomcat7:run-war
+ 1428  jps
+ 1429  mvn -Dmaven.tomcat.port=8080 -DinstanceNumber=0 tomcat7:run-war
+ 1430  CF_INSTANCE_INDEX=0 mvn -Dmaven.tomcat.port=8080 tomcat7:run-war
+ 1431  exit
+ 1432  cd workspace/
+ 1433  ls
+ 1434  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1435  CF_INSTANCE_INDEX=1 mvn -Dmaven.tomcat.port=9090 tomcat7:run-war
+ 1436  exit
+ 1437  cd workspace/
+ 1438  ls
+ 1439  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1440  ls -l
+ 1441  ./start-load-balancer.sh
+ 1442  sudo ./start-load-balancer.sh
+ 1443  exit
+ 1444  cd workspace
+ 1445  ls
+ 1446  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1447  CF_INSTANCE_INDEX=0 mvn -Dmaven.tomcat.port=8080 tomcat7:run-war
+ 1448  mvn clean package
+ 1449  CF_INSTANCE_INDEX=0 mvn -Dmaven.tomcat.port=8080 tomcat7:run-war
+ 1450  cd ..
+ 1451  git clone https://github.com/platform-acceleration-lab/apps-platform-acceleration-struts-code.git
+ 1452  ls
+ 1453  cd apps-platform-acceleration-struts-code/
+ 1454  clear
+ 1455  ls -l
+ 1456  mvn clean package
+ 1457  mvn spring-boot:run
+ 1458  mvn clean package
+ 1459  mvn spring-boot:run
+ 1460  mvn clean package
+ 1461  mvn spring-boot:run
+ 1462  mvn clean package
+ 1463  mvn spring-boot:run
+ 1464  cf push struts -p target/struts.war --random-route --no-start
+ 1465  cf bind-service struts struts-mysql
+ 1466  cf start struts
+ 1467  minio server ~/shared
+ 1468  ls
+ 1469  cd workspace/
+ 1470  ls
+ 1471  cd assignment-submission/
+ 1472  ./gradlew modernizationStrutsToSpring -PstrutsAppUrl=http://localhost:8080/
+ 1473  ls
+ 1474  cd workspace/
+ 1475  ls -l
+ 1476  cd apps-movie-fun-modernization-code/
+ 1477  ./gradlew build
+ 1478  mvn clean package -DskipTests -Dmaven.test.skip=true
+ 1479  ./gradlew clean build
+ 1480  ./gradlew bootRun --parallel
+ 1481  git clean -df
+ 1482  echo "source ~/workspace/apps-movie-fun-modernization-code/.env" >> ~/.bashrc
+ 1483  ./gradlew bootRun --parallel
+ 1484  gradle wrapper
+ 1485  ./gradlew init
+ 1486  ./gradlew tasks
+ 1487  ./gradlew bootRun
+ 1488  ./gradlew bootRun --parallel
+ 1489  echo "source ~/workspace/apps-movie-fun-modernization-code/.env" >> ~/.bashrc
+ 1490  source ~/.bashrc
+ 1491  ./gradlew bootRun --parallel
+ 1492  source ~/.bashrc
+ 1493  echo "source ~/workspace/apps-movie-fun-modernization-code/.env" >> ~/.bashrc
+ 1494  source ~/.bashrc
+ 1495  less ~/.bashrc
+ 1496  less .env
+ 1497  source ~/.bashrc
+ 1498  ./gradlew bootRun --parallel
+ 1499  ./gradlew bootRun
+ 1500  ./gradlew build
+ 1501  ./gradlew clean build
+ 1502  cf login
+ 1503  cf push
+ 1504  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+ 1505  ./gradlew build
+ 1506  git clean -df
+ 1507  ./gradlew clean build
+ 1508  gradle wrapper
+ 1509  ./gradlew init
+ 1510  ./gradlew bootRun
+ 1511  ./gradlew clean build
+ 1512  ls
+ 1513  pwd
+ 1514  cd workspace/
+ 1515  cd apps-movie-fun-modernization-code/
+ 1516  ./gradlew dependenciesGraph
+ 1517  open build/dependenciesGraph/graph.dot.png
+ 1518  ./gradlew build
+ 1519  cd workspace/
+ 1520  cd apps-movie-fun-modernization-code
+ 1521  ./gradlew dependenciesGraph
+ 1522  gradle build
+ 1523  gradle build applications:album-service:bootRun
+ 1524  gradle build :applications:album-service:bootRun
+ 1525  history | grep 'bootRun'
+ 1526  ./gradlew build applications:album-service:bootRun
+ 1527  ./gradlew dependenciesGraph
+ 1528  cd -
+ 1529  cd workspace/apps-movie-fun-modernization-code
+ 1530  ./gradlew applications:movie-service:bootRun
+ 1531  mysql -uroot
+ 1532  cf push struts -p target/struts.war --random-route --no-start
+ 1533  clear
+ 1534  cd workspace/assignment-submission/
+ 1535  ./gradlew replatformingStruts -PstrutsAppUrl=https://struts-fluent-giraffe.apps.longs.pal.pivotal.io/
+ 1536  aws s3 rm s3://cf-cf-89bdf68b-daae-423b-8f62-641814295df4/ --recursive
+ 1537  aws configure
+ 1538  aws s3 rm s3://moviefun/ --recursive
+ 1539  aws configure
+ 1540  aws s3 rm s3://cf-89bdf68b-daae-423b-8f62-641814295df4/ --recursive
+ 1541  cf delete-space sandbox -f
+ 1542  cf space
+ 1543  cf create-space sandbox
+ 1544  cd ..
+ 1545  ls
+ 1546  cd apps-platform-acceleration-struts-code/
+ 1547  ls
+ 1548  git add .
+ 1549  git commit -am 'struts'
+ 1550  git push
+ 1551  git push origin apps-platform-accel-struts-code
+ 1552  git status
+ 1553  git branch
+ 1554  git branch apps-platform-acceleration-struts-code
+ 1555  git branch
+ 1556  git branch apps-platform-acceleration-struts-code 
+ 1557  git checkout apps-platform-acceleration-struts-code 
+ 1558  git branch
+ 1559  git push
+ 1560  git push --set-upstream origin apps-platform-acceleration-struts-code
+ 1561  git checkout master
+ 1562  git branch
+ 1563  git push
+ 1564  git config
+ 1565  git config --global
+ 1566  git config --help
+ 1567  ls -l
+ 1568  git push --set-upstream origin apps-platform-acceleration-struts-code-sf
+ 1569  git push -u origin apps-platform-acceleration-struts-code.git
+ 1570  git push
+ 1571  git branch 
+ 1572  git checkout apps-platform-acceleration-struts-code 
+ 1573  git push http://github.com/phanes72 master:apps-platform-acceleration-struts-code
+ 1574  git push https://github.com/phanes72 master:apps-platform-acceleration-struts-code
+ 1575  git push https://github.com/phanes72/apps-platform-acceleration-struts-code master:apps-platform-acceleration-struts-code
+ 1576  git branch
+ 1577  git fetch -p
+ 1578  git remote prune orgin
+ 1579  git config
+ 1580  git config --global user.name sfistler
+ 1581  git config --global unset-all user
+ 1582  git config --unset-all user.
+ 1583  git config --show-origin
+ 1584  git config --global --show-origin
+ 1585  git config --show-origin
+ 1586  clear
+ 1587  cd ..
+ 1588  git origin
+ 1589  git
+ 1590  git clone https://github.com/platform-acceleration-lab/apps-platform-acceleration-ant-code.git
+ 1591  git checkout -b ant-start
+ 1592  cd apps-platform-acceleration-ant-code/
+ 1593  git checkout -b ant-start
+ 1594  git checkout ant-start
+ 1595  git branch
+ 1596  git checkout master
+ 1597  git reset origin/master --hard
+ 1598  git clean -df
+ 1599  git branch
+ 1600  git branch ant-start
+ 1601  git branch
+ 1602  git checkout ant-start
+ 1603  rm -rf .idea
+ 1604  find . -name *.iml -exec rm {} \;
+ 1605  gradle clean build
+ 1606  gradle uploadArchives
+ 1607  gradle clean dependenciesGraph
+ 1608  git
+ 1609  git remote prune origin
+ 1610  cd..
+ 1611  cd ..
+ 1612  clear
+ 1613  git clean -df
+ 1614  ls
+ 1615  cd apps-movie-fun-code/
+ 1616  git clean -df
+ 1617  cd ..
+ 1618  cd apps-platform-acceleration-ant-code/
+ 1619  git clean -df
+ 1620  cd ..
+ 1621  ls
+ 1622  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1623  git clean -df
+ 1624  cd ..
+ 1625  cd apps-platform-acceleration-struts-code/
+ 1626  git clean -df
+ 1627  cd ..
+ 1628  clear
+ 1629  source ~/.bashrc
+ 1630  env
+ 1631  clear
+ 1632  cd ..
+ 1633  ls
+ 1634  ls -l
+ 1635  cd workspace/
+ 1636  ls -l
+ 1637  clear
+ 1638  git clone git@github.com:phanes72/apps-platform-acceleration-struts-code.git
+ 1639  ls -l
+ 1640  cd apps-platform-acceleration-struts-code/
+ 1641  git checkout modernize-mvc-start
+ 1642  git checkout -b modernize-mvc
+ 1643  git branch
+ 1644  git checkout -b modernize-mvc
+ 1645  git checkout -b modernize-mvc-pjh
+ 1646  git checkout -b modernize-mvc
+ 1647  git -b modernize-mvc-start
+ 1648  git switch moderize-mvc-start
+ 1649  git --help
+ 1650  git checkout -b modernize-mvc
+ 1651  git branch modernize-mvc
+ 1652  git branch
+ 1653  git branch modernize-mvc
+ 1654  git branch - modernize-mvc-pjh 
+ 1655  git branch -d modernize-mvc-pjh 
+ 1656  git checkout -b modernize-mvc
+ 1657  git branch
+ 1658  git branch modernize-mvc
+ 1659  git checkout modernize-mvc
+ 1660  git branch 
+ 1661  mvn clean package
+ 1662  mvn spring-boot:run
+ 1663  mvn clean package
+ 1664  mvn spring-boot:run
+ 1665  mvn clean package
+ 1666  mvn spring-boot:run
+ 1667  mvn clean package
+ 1668  mvn spring-boot:run
+ 1669  mvn clean package
+ 1670  mvn spring-boot:run
+ 1671  mvn clean package
+ 1672  mvn spring-boot:run
+ 1673  mvn clean package
+ 1674  mvn spring-boot:run
+ 1675  mvn clean package
+ 1676  mvn spring-boot:run
+ 1677  mvn clean package
+ 1678  mvn spring-boot:run
+ 1679  mvn clean package
+ 1680  mvn spring-boot:run
+ 1681  mvn clean package
+ 1682  mvn spring-boot:run
+ 1683  git remote -v
+ 1684  git remote set-url origin https://github.com/phanes72/apps-platform-acceleration-struts-code
+ 1685  git remote -v
+ 1686  git status
+ 1687  git push
+ 1688  git push --set-upstream origin modernize-mvc
+ 1689  git status
+ 1690  git remote -v
+ 1691  mvn clean package
+ 1692  mvn spring-boot:run
+ 1693  mvn clean package
+ 1694  mvn spring-boot:run
+ 1695  mvn clean package
+ 1696  mvn spring-boot:run
+ 1697  git branch
+ 1698  git push
+ 1699  mvn clean package
+ 1700  mvn spring-boot:run
+ 1701  cd ..
+ 1702  cd assignment-submission/
+ 1703  cd ~/workspace/assignment-submission
+ 1704  ./gradlew modernizationStrutsToSpring -PstrutsAppUrl=http://localhost:8080/
+ 1705  cd ..
+ 1706  ls -l
+ 1707  cd apps-platform-acceleration-removing-instance-specific-state-code/
+ 1708  cd ..
+ 1709  cd apps-platform-acceleration-struts-code/
+ 1710  mvn spring-boot:run
+ 1711  cd ..
+ 1712  ls -l
+ 1713  https://github.com/phanes72/apps-movie-fun-modernization-code.git
+ 1714  ls -l
+ 1715  git config --global user.name "Phanes72"
+ 1716  git config 
+ 1717  git config --global user.name
+ 1718  https://github.com/phanes72/apps-movie-fun-modernization-code.git
+ 1719  git clone git@github.com:$phanes72/apps-movie-fun-modernization-code.git
+ 1720  git clone https://github.com/phanes72/apps-movie-fun-modernization-code.git
+ 1721  ls -l
+ 1722  cd apps-movie-fun-modernization-code/
+ 1723  git branch
+ 1724  git checkout -b gradlization-start
+ 1725  git branch
+ 1726  mysql -uroot -e 'DROP DATABASE IF EXISTS movies; CREATE DATABASE movies;'
+ 1727  mysql
+ 1728  mysql -uroot:
+ 1729  mysql -u root
+ 1730  git history
+ 1731  history
+ 1732  git history > notes.txt
+ 1733  history > notes.txt
+ 1734  mysql -uroot movies < ~/workspace/apps-movie-fun-modernization-code/db/schema.ddl
+ 1735  gradle wrapper
+ 1736  ls -l
+ 1737  cd gradle/
+ 1738  ls -l
+ 1739  cd ..
+ 1740  clear
+ 1741  .gradle/
+ 1742  .gradlew/
+ 1743  ls
+ 1744  cd gradle/
+ 1745  ./gradlew
+ 1746  cd ..
+ 1747  ls
+ 1748  ./gradlew init
+ 1749  clear
+ 1750  ./gradlew tasks
+ 1751  ./gradlew bootRun
+ 1752  ./gradlew build
+ 1753  less .env
+ 1754  echo "source ~/workspace/apps-movie-fun-modernization-code/.env" >> ~/.bashrc
+ 1755  ./gradlew bootRun
+ 1756  ./gradlew clean
+ 1757  git status
+ 1758  ./gradlew bootRun
+ 1759  env
+ 1760  source .env
+ 1761  env
+ 1762  ./gradlew bootRun
+ 1763  jps
+ 1764  git log
+ 1765  git branch
+ 1766  git remote -v
+ 1767  git status
+ 1768  git diff
+ 1769  ./gradlew clean
+ 1770  ./gradlew BUILD
+ 1771  ./gradlew bootRun
+ 1772  ps -aux
+ 1773  ps -aux | grep 22230
+ 1774  jps
+ 1775  sudo kill -5 22230
+ 1776  ps -aux | grep 22230
+ 1777  sudo kill -5 22300
+ 1778  ps -aux
+ 1779  ./gradlew bootRun
+ 1780  ps -aux | grep compile "org.apache.geronimo.specs:geronimo-osgi-locator:1.1"
+ 1781  ps -aux | grep 22390
+ 1782  ./gradlew bootRun
+ 1783  source .env
+ 1784  ./gradlew bootRun
+ 1785  git clone https://github.com/phanes72/apps-movie-fun-modernization-code.git
+ 1786  cd ..
+ 1787  cd apps-movie-fun-modernization-code/
+ 1788  . idea
+ 1789  idea .
+ 1790  ./gradlew build
+ 1791  ./gradlew clean build
+ 1792  git checkout multiple-jars-start
+ 1793  git branch
+ 1794  git status
+ 1795  git add .
+ 1796  rm -rf apps-movie-fun-modernization-code/
+ 1797  git add .
+ 1798  git branch
+ 1799  git commit -m "Complete"
+ 1800  git push
+ 1801  git push --set-upstream origin gradlization-start 
+ 1802  git push --set-upstream origin gradlization-start:gradlization-finish
+ 1803  git checkout -b gradlization-finish
+ 1804  git push
+ 1805  git push --set-upstream origin gradlization-finish
+ 1806  git checkout multiple-jars-start
+ 1807  git branch -b multiplejars
+ 1808  get checkout -b multiplejars
+ 1809  git checkout -b multiplejars
+ 1810  ./gradlew bootRun
+ 1811  cd applications/
+ 1812  cd movie-fun-app/
+ 1813  ./gradlew bootRun
+ 1814  cd ..
+ 1815  ./gradlew clean build
+ 1816  ./gradlew bootRun
+ 1817  ./gradlew applications:movie-fun-app:bootRun
+ 1818  ./gradlew bootRun --parallel
+ 1819  ./gradlew applications:movie-fun-app:bootRun
+ 1820  ./gradlew bootRun
+ 1821  ./gradlew clean build
+ 1822  ./gradlew bootRun
+ 1823  git checkout microservices-start
+ 1824  git checkout -b microservices-star-pjh
+ 1825  git branch
+ 1826  cd ..
+ 1827  git clone https://github.com/phanes72/apps-movie-fun-modernization-code.git
+ 1828  cd apps-movie-fun-modernization-code
+ 1829  ./idea
+ 1830  .idea
+ 1831  . idea
+ 1832  git checkout microservices-start
+ 1833  git branch
+ 1834  git checkout -b microservices-start
+ 1835  git branch
+ 1836  clear
+ 1837  export MOVIES_URL=http://localhost:8082/movies
+ 1838  export movies.url=http://localhost:8082/movies
+ 1839  ./gradlew applications:movie-fun-app:bootRun
+ 1840  history
+ 1841  ./gradlew applications:movie-fun-app:bootRun
+ 1842  jps
+ 1843  ps -Flww -p 4253
+ 1844  ps -ef | grep docker
+ 1845  netstat -a
+ 1846  env
+ 1847  env | grep MOVIES
+ 1848  cd workspace/apps-movie-fun-modernization-code
+ 1849  history | grep 'graph'
+ 1850  history | grep 'Graph'
+ 1851  ./gradlew dependenciesGraph
+ 1852  jps
+ 1853  ps
+ 1854  ps -ef
+ 1855  mysql -uroot
+ 1856  cd ../assignment-submission/
+ 1857  ./gradlew modernizationMicroservices -PmovieFunUrl=https://movie-fun-app-pg.apps.longs.pal.pivotal.io/
+ 1858  cd workspace/
+ 1859  cd apps-movie-fun-modernization-code
+ 1860  ./gradlew applications:movie-fun-app:bootRun
+ 1861  export MOVIES_URL=http://localhost:8082/movies
+ 1862  ./gradlew applications:movie-fun-app:bootRun
+ 1863  export ALBUMS_URL=http://localhost:8083/albums
+ 1864  ./gradlew applications:movie-fun-app:bootRun
+ 1865  export VCAP_SERVICES='{"p-mysql": [{"credentials": {"jdbcUrl": "jdbc:mysql://127.0.0.1:3306/albums?user=root"}, "name": "albums-mysql"}, {"credentials": {"jdbcUrl": "jdbc:mysql://127.0.0.1:3306/movies?user=root"}, "name": "movies-mysql"}]}'
+ 1866  ./gradlew applications:movie-fun-app:bootRun
+ 1867  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"6AM8JTAHCHTILESTBV38\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"FQL/6KWriBJrpgckcqb7Bnb1OnDP2uOC8oOqU8Tm\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1868  ./gradlew applications:movie-fun-app:bootRun
+ 1869  export ALBUMS_URL=http://localhost:8080/albums
+ 1870  ./gradlew applications:movie-fun-app:bootRun
+ 1871  export ALBUMS_URL=http://localhost:8081/albums
+ 1872  ./gradlew applications:movie-fun-app:bootRun
+ 1873  gradle build
+ 1874  history | grep 'VCAP'
+ 1875  history 1928
+ 1876  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"6AM8JTAHCHTILESTBV38\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"FQL/6KWriBJrpgckcqb7Bnb1OnDP2uOC8oOqU8Tm\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1877  ./gradlew applications:movie-fun-app:bootRun
+ 1878  clear
+ 1879  ./gradlew applications:movie-fun-app:deploy
+ 1880  ./gradlew deploy
+ 1881  ./gradlew clean build
+ 1882  ./gradlew clean build -x test
+ 1883  ./gradlew deploy
+ 1884  cf logs movie-fun-app --recent
+ 1885  cf logs movie-fun-app 
+ 1886  ./gradlew clean build -x test
+ 1887  ./gradlew deploy
+ 1888  git branch
+ 1889  git status
+ 1890  git push 
+ 1891  git push --set-upstream origin microservices-start
+ 1892  git remote -b microservices-start
+ 1893  git branch
+ 1894  git push origin microservices-start 
+ 1895  git -v remote
+ 1896  git remote -b
+ 1897  git remote -v
+ 1898  git push https://github.com/phanes72/apps-movie-fun-modernization-code.git microservices-start
+ 1899  git push
+ 1900  git push --set-upstream origin microservices-start
+ 1901  git remote -v
+ 1902  git push 
+ 1903  git --set-upstream --help
+ 1904  git remote --help
+ 1905  git fetch
+ 1906  git push
+ 1907  git status
+ 1908  git push --set-upstream origin microservices-start
+ 1909  git branch
+ 1910  git remote add microservices-start
+ 1911  git remote add microservices-start https://github.com/phanes72
+ 1912  git push
+ 1913  git push --set-upstream origin microservices-start
+ 1914  git push origin:microservices-start
+ 1915  git push https://github.com/phanes72:microservices-start
+ 1916  env
+ 1917  env | grep 'DESK'
+ 1918  cd work
+ 1919  cd workspace/
+ 1920  cd apps-movie-fun-modernization-code
+ 1921  clear
+ 1922  ./gradlew applications:movie-service:bootRun
+ 1923  clear
+ 1924  ./gradlew applications:movie-service:bootRun
+ 1925  cd workspace/apps-movie-fun-modernization-code
+ 1926  ./gradlew applications:album-service:bootRun
+ 1927  gradle build
+ 1928  gradle clean build
+ 1929  gradle clean build --stacktrace
+ 1930  ./gradlew applications:album-service:bootRun
+ 1931  export VCAP_SERVICES='{"p-mysql": [{"credentials": {"jdbcUrl": "jdbc:mysql://127.0.0.1:3306/albums?user=root"}, "name": "albums-mysql"}, {"credentials": {"jdbcUrl": "jdbc:mysql://127.0.0.1:3306/movies?user=root"}, "name": "movies-mysql"}]}'
+ 1932  ./gradlew applications:album-service:bootRun
+ 1933  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"${MINIO_ACCESS_KEY:?missing}\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"${MINIO_SECRET_ACCESS_KEY:?missing}\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1934  ./gradlew applications:album-service:bootRun
+ 1935  history
+ 1936  clear
+ 1937  history
+ 1938  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"6AM8JTAHCHTILESTBV38\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"FQL/6KWriBJrpgckcqb7Bnb1OnDP2uOC8oOqU8Tm\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1939  ./gradlew applications:album-service:bootRun
+ 1940  cf logs movie-fun-app --recent
+ 1941  cf logs movie-fun-app 
+ 1942  mysql -ucf_a5052244_798f_4126_a2f6_003fd28a8456 -h127.0.0.1 -P63306 -p -e"SHOW DATABASES;"
+ 1943  mysql -uplZy3m0UFLJp2WXB -h127.0.0.1 -P63306 -p -e"SHOW DATABASES;"
+ 1944  cd workspace/apps-movie-fun-modernization-code
+ 1945  mysql -uroot
+ 1946  export SPRING_PROFILES_ACTIVE='development'
+ 1947  history | grep 'migrate'
+ 1948  ./gradlew flywayMigrate
+ 1949  cf env album-service
+ 1950  cf ssh -N -L 63306:album-service-gg.apps.longs.pal.pivotal.io:3306 album-service
+ 1951  cf env album-service-gg
+ 1952  cf ssh -N -L 63306:192.168.16.98:3306 album-service-gg
+ 1953  cd workspace/
+ 1954  cd apps-movie-fun-modernization-code
+ 1955  git status
+ 1956  git checkout security-start
+ 1957  git checkout -b security-start-Giri
+ 1958  git status
+ 1959  clear
+ 1960  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"6AM8JTAHCHTILESTBV38\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"FQL/6KWriBJrpgckcqb7Bnb1OnDP2uOC8oOqU8Tm\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 1961  export APPLICATION_OAUTH_ENABLED=false
+ 1962  export spring.profiles.active=development
+ 1963  export spring.profiles.active="development"
+ 1964  export spring.profiles.active='development'
+ 1965  export SPRING.PROFILES.ACTIVE='development'
+ 1966  export SPRING.PROFILES.ACTIVE="development"
+ 1967  export test=false
+ 1968  export SPRING.PROFILES.ACTIVE="\"development\""
+ 1969  env | grep 'spring'
+ 1970  env | grep 'SPRING'
+ 1971  env | grep '*spring*'
+ 1972  env | grep '*SPRING*'
+ 1973  env | grep '*dev*'
+ 1974  env | grep '*DEV*'
+ 1975  ./gradlew clean build
+ 1976  env | grep 'test'
+ 1977  history | grep 'test'
+ 1978  ./gradlew clean build -x test
+ 1979  history | grep 'bootRun'
+ 1980  ./gradlew bootRun --parallel
+ 1981  export SPRING_PROFILES_ACTIVE='development'
+ 1982  env
+ 1983  cf logout
+ 1984  cf login
+ 1985  ./gradlew deploy
+ 1986  ./gradlew setupPcfEnv
+ 1987  ./gradlew deploy
+ 1988  cf logs movie-fun-app
+ 1989  cf logs movie-fun-app-gg
+ 1990  mysql -um8JU6ysGi4daPbox -h127.0.0.1 -P63307 -p -e"SHOW DATABASES;"
+ 1991  ./gradlew cfMigrate
+ 1992  cd workspace/apps-movie-fun-modernization-code
+ 1993  ./gradlew cfMigrate
+ 1994  cf env movie-service-gg
+ 1995  cf env album-service-gg
+ 1996  CF_MIGRATE=true ./gradlew cfMigrate
+ 1997  cf api
+ 1998  cf logs
+ 1999  cf apps
+ 2000  cf services
+ 2001  CF_MIGRATE=true ./gradlew cfMigrate
+ 2002  cd..
+ 2003  cd ..
+ 2004  cd assignment-submission/
+ 2005  ./gradlew modernizationSecurity -PmovieFunUrl=https://movie-fun-app-gg.apps.longs.pal.pivotal.io -PuaaUsername=user -PuaaPassword=password
+ 2006  cd ../apps-movie-fun-modernization-code
+ 2007  clear
+ 2008  "p-mysql": [
+ 2009  clear
+ 2010  git checkout service-discovery-start
+ 2011  git add
+ 2012  git add .
+ 2013  git commit -m "Security solution"
+ 2014  git push 
+ 2015  git push git push --set-upstream origin security-start-Giri
+ 2016  git push --set-upstream origin security-start-Giri
+ 2017  git remote add gkgowdar https://github.com/gkgowdar/apps-movie-fun-modernization-code.git
+ 2018  git push gkgowdar
+ 2019  git checkout service-discovery-start
+ 2020  git checkout -b service-discovery-giri
+ 2021  clear
+ 2022  ./gradlew clean build
+ 2023  ./gradlew clean build -x test
+ 2024  ./gradlew deploy
+ 2025  cd ../assignment-submission/
+ 2026  ./gradlew modernizationServiceDiscovery -PmovieFunUrl=https://movie-fun-app-gg.apps.longs.pal.pivotal.io
+ 2027  ./gradlew modernizationServiceDiscovery -PmovieFunUrl=https://movie-fun-app-gg.apps.longs.pal.pivotal.io  -PuaaUsername=user -PuaaPassword=password
+ 2028  cd ../apps-movie-fun-modernization-code
+ 2029  env
+ 2030  history | grep 'export'
+ 2031  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"6AM8JTAHCHTILESTBV38\", \"bucket\": \"movie-fun-course\", \"secret_access_key\": \"FQL/6KWriBJrpgckcqb7Bnb1OnDP2uOC8oOqU8Tm\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 2032  export SPRING_PROFILES_ACTIVE='development'
+ 2033  export EUREKA_CLIENT_ENABLED=false
+ 2034  export RIBBON_EUREKA_ENABLED=false
+ 2035  export ALBUM_SERVICE_RIBBON_LISTOFSERVERS=http://localhost:8081
+ 2036  export MOVIE_SERVICE_RIBBON_LISTOFSERVERS=http://localhost:8082
+ 2037  ./gradlew bootRun --parallel
+ 2038  env
+ 2039  env | grep 'albums*'
+ 2040  export albums.url=//album-service/albums
+ 2041  export albums.url="//album-service/albums"
+ 2042  export albums.url=//album-service/albums
+ 2043  export albums.url='//album-service/albums'
+ 2044  export albums.url=/"//album-service/albums/"
+ 2045  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"AKIAJI7L5RJ72KLNYS5Q\", \"bucket\": \"cf-c344ce80-8dab-4515-bbd4-58048d972c72\", \"secret_access_key\": \"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\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 2046  ./gradlew bootRun --parallel
+ 2047  export albums.url=//album-service/albums
+ 2048  export ALBUMS_URL=//album-service/albums
+ 2049  export MOVIES_URL=//movie-service/movies
+ 2050  ./gradlew bootRun --parallel
+ 2051  clear
+ 2052  export MOVIES_URL=http://localhost:8082
+ 2053  export ALBUMS_URL=http://localhost:8081
+ 2054  ./gradlew bootRun --parallel
+ 2055  export application.oauth-enabled=false
+ 2056  ./gradlew bootRun --parallel
+ 2057  clear
+ 2058  git checkout config-server-start
+ 2059  git add .
+ 2060  git commit =m "service discovery"
+ 2061  git commit -m "service discovery"
+ 2062  git push gkgowdar
+ 2063  git checkout config-server-start
+ 2064  git checkout -b config-server-giri
+ 2065  export VCAP_SERVICES="{\"aws-s3\": [{\"credentials\": {\"access_key_id\": \"AKIAJI7L5RJ72KLNYS5Q\", \"bucket\": \"cf-c344ce80-8dab-4515-bbd4-58048d972c72\", \"secret_access_key\": \"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\"}, \"label\": \"aws-s3\", \"name\": \"moviefun-s3\"}]}"
+ 2066  export SPRING_PROFILES_ACTIVE='development'
+ 2067  export MOVIES_PAGESIZE=6
+ 2068  ./gradlew clean build
+ 2069  ./gradlew clean build -x test
+ 2070  ./gradlew deploy
+ 2071  cf services
+ 2072  cf create-service p-config-server standard movie-fun-config -c config-server.json
+ 2073  cf services
+ 2074  cd ../assignment-submission/
+ 2075  ./gradlew modernizationConfigServer -PmovieFunUrl=https://movie-fun-app-gg.apps.longs.pal.pivotal.io
+ 2076  ./gradlew modernizationConfigServer -PmovieFunUrl=https://movie-fun-app-gg.apps.longs.pal.pivotal.io -PuaaUsername=user -PuaaPassword=password
+ 2077  cd -
+ 2078  git add .
+ 2079  git commit -m"config server"
+ 2080  git push gkgowdar
+ 2081  clear
+ 2082  git checkout circuit-breaker-start
+ 2083  git checkout -b circuit-breaker-giri
+ 2084  ./gradlew clean build
+ 2085  ./gradlew clean build -x test
+ 2086  ./gradlew deploy
+ 2087  cd ..
+ 2088  git checkout https://github.com/gayathrirx/pal-user-provided-services.git
+ 2089  git clone https://github.com/gayathrirx/pal-user-provided-services.git
+ 2090  ls
+ 2091  cd pal-user-provided-services/
+ 2092  git status
+ 2093  git branch -b pal-user-provided-services-g3
+ 2094  git status
+ 2095  ./gradlew clean build
+ 2096  cf apps
+ 2097  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2098  cf cups SERVICE_INSTANCE -p '{"host":"externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com", "port":"3306", "username":"pal", "password":"password", "databasename":"externaldatabase"}'
+ 2099  cf services
+ 2100  cf marketplace
+ 2101  cf marketplace -s SERVICE
+ 2102  cf marketplace -s SERVICE_INSTANCE
+ 2103  ./gradlew clean build
+ 2104  ./gradlew clean build -x test
+ 2105  export VCAP_SERVICES '{"user-provided": [{"credentials": {"databasename": "externaldatabase","host": "externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com","password": "password","port": "3306","username": "pal"}'
+ 2106  export VCAP_SERVICES= '{"user-provided": [{"credentials": {"databasename": "externaldatabase","host": "externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com","password": "password","port": "3306","username": "pal"}'
+ 2107  export VCAP_SERVICES= '{"user-provided": [{"credentials": {"databasename": "externaldatabase","host": "externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com","password": "password","port": "3306","username": "pal"}]]'
+ 2108  export VCAP_SERVICES='{"user-provided": [{"credentials": {"databasename": "externaldatabase","host": "externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com","password": "password","port": "3306","username": "pal"}]]'
+ 2109  ./gradlew bootRun
+ 2110  export VCAP_SERVICES='{"user-provided": [{"credentials": {"databasename": "externaldatabase","host": "externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com","password": "password","port": "3306","username": "pal"}]]'
+ 2111  ./gradlew bootRun
+ 2112  export VCAP_SERVICES='{"user-provided": {"credentials": {"hostname":"externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com","port": 3306,"name": "externaldatabase","username": "pal","password":"password","uri": "mysql://pal:password@192.168.16.98:3306/externaldatabase?reconnect=true","jdbcUrl": "jdbc:mysql://192.168.16.98:3306/externaldatabase?user=pal&password=password"}]}'
+ 2113  ./gradlew bootRun
+ 2114  export VCAP_SERVICES='{"user-provided": [{"credentials": {"databasename": "externaldatabase","host":"externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com","password": "password","port": "3306","username": "pal"}]}'
+ 2115  ./gradlew bootRun
+ 2116  history
+ 2117  export VCAP_SERVICES='{"user-provided": [{"credentials": {"databasename": "externaldatabase","host":"externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com","password": "password","port": "3306","username": "pal"}]]'
+ 2118  ./gradlew bootRun
+ 2119  history | grep 'VCAP'
+ 2120  export VCAP_SERVICES='{"user-provided": [{"credentials": {"databasename": "externaldatabase","host": "externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com","password": "password","port": "3306","username": "pal"}]]'
+ 2121  ./gradlew bootRun
+ 2122  export VCAP_SERVICES='{"user-provided": [{"credentials": {"databasename": "externaldatabase","host": "externaldatabase.cjtolyfy4zmf.us-east-2.rds.amazonaws.com","password": "password","port": "3306","username": "pal"}}]}'
+ 2123  ./gradlew bootRun
+ 2124  env
+ 2125  history | grep 'VCAP'
+ 2126  ./gradlew bootRun
+ 2127  ./gradlew clean build -x test
+ 2128  histroy | grep 'cf push'
+ 2129  history | grep 'cf push'
+ 2130  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2131  ./gradlew bootRun
+ 2132  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2133  ./gradlew clean build -x test
+ 2134  ./gradlew bootRun
+ 2135  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2136  ./gradlew clean build -x test
+ 2137  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2138  ./gradlew clean build -x test
+ 2139  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2140  ./gradlew clean build -x test
+ 2141  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2142  ./gradlew clean build -x test
+ 2143  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2144  git add .
+ 2145  git commit -m"user provided service"
+ 2146  git push
+ 2147  ./gradlew clean build -x test
+ 2148  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2149  ./gradlew clean build -x test
+ 2150  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2151  ./gradlew clean build -x test
+ 2152  cf push pal-user-provided-service -p build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar 
+ 2153  git add .
+ 2154  git commit -m"auto configuration"
+ 2155  git push
+ 2156  history
+ 2157  history > history.txt
